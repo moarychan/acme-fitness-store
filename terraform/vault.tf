@@ -1,6 +1,6 @@
 # Keyvault for Saving Secrets
 resource "azurerm_key_vault" "key_vault" {
-  name                       = "${var.project_name}-keyvault"
+  name                       = "${var.project_name}-keyvaultx"
   location                   = azurerm_resource_group.grp.location
   resource_group_name        = azurerm_resource_group.grp.name
   tenant_id                  = data.azurerm_client_config.current.tenant_id
